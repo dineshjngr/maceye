@@ -1,0 +1,45 @@
+# Build output
+/build/
+/build.nosync/
+/MacEye.app
+*.zip
+*.dSYM
+
+# Xcode: per-user state
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+*.xccheckout
+*.moved-aside
+DerivedData/
+project.xcworkspace/xcuserdata/
+
+# Swift Package Manager (not used yet, kept for safety)
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon?
+
+# Signing material and secrets. None are needed to build MacEye; never commit them.
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.keychain
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+Local.xcconfig
+
+# Editors and tools
+.vscode/
+.idea/
+*.swp
+.claude/

@@ -1,0 +1,71 @@
+name: Bug report
+description: Something in MacEye does not work as it should
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the report. Please search existing issues first.
+        Do not report security problems here. See SECURITY.md.
+        Remove personal information from screenshots and logs before attaching them.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Settings › Look
+        2. Choose the Cat theme
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: maceye-version
+    attributes:
+      label: MacEye version
+      description: Shown in the release file name, or "built from source" with the commit.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: "macOS 15.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac-type
+    attributes:
+      label: Mac type
+      options:
+        - Apple silicon
+        - Intel
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you get MacEye?
+      options:
+        - Downloaded release
+        - Built from source
+    validations:
+      required: true
+  - type: input
+    id: displays
+    attributes:
+      label: Number of displays
+      placeholder: "1"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Settings you changed, screenshots, or the output of `MacEye --status`.
